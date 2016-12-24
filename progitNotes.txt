@@ -1,0 +1,65 @@
+Komande:
+
+
+git diff
+git diff --cached  --staged and --cached are synonyms
+
+git checkout <filename>
+git reset <filename>
+git add <filename>
+
+
+git log --pretty=format:"%h %s" --graph
+
+git remote -v
+git remote add <url>
+
+git fetch [branch name]  gets changes from remote to staging area, you can merge them when you want
+git pull = git fetch + git merge  (if branch is set to follow branch we want to fetch)
+
+
+git push origin master
+git remote show origin
+git remote rename oldname newname
+git remote rm paul
+
+GIT TAG
+** anotated tags
+git tag -a v0.1 -m "first test version"
+git show v0.1
+** lightweight tags
+git tag v1.4-lw
+git show v1.4-lw
+**tagging later - using specific commit
+git tag -a v1.2 9fceb02
+
+Sharing Tags
+By default, the git push command doesn’t transfer tags to remote servers.
+You will have to explicitly push tags to a shared server after you have created
+them. This process is just like sharing remote branches – you can run git push
+origin [tagname] . For example:
+git push origin v1.5
+git push origin --tags	-this will push all your tags to remote origin
+git checkout -b version2 v2.0.0
+
+ALIASES
+
+git config alias.co checkout
+git config --global alias.unstage 'reset HEAD --'
+
+
+3. BRANCHES
+
+git branch testing
+git log --oneline --decorate
+git checkout testing
+
+
+
+
+
+
+
+
+
+
