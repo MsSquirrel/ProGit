@@ -42,7 +42,7 @@ git push origin v1.5
 git push origin --tags	-this will push all your tags to remote origin
 git checkout -b version2 v2.0.0
 
-ALIASES
+Aliases
 
 git config alias.co checkout
 git config --global alias.unstage 'reset HEAD --'
